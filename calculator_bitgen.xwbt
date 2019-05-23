@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\DPain\lab4\calculator.ncd
+OUTFILE=C:\Users\DPain\lab4\calculator.bit
+FAMILY=Spartan3E
+PART=xc3s100e-4cp132
+WORKINGDIR=C:\Users\DPain\lab4
+LICENSE=WebPack
+USER_INFO=211742611_0_0_373

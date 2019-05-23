@@ -1,0 +1,571 @@
+Release 13.4 - xst O.87xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: calculator.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "calculator.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "calculator"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : calculator
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/DPain/lab4/dff.vhdl" in Library work.
+Architecture behave of Entity dff is up to date.
+Compiling vhdl file "C:/Users/DPain/lab4/dlatch.vhdl" in Library work.
+Architecture behave of Entity dlatch is up to date.
+Compiling vhdl file "C:/Users/DPain/lab4/full_adder.vhdl" in Library work.
+Architecture behave of Entity full_adder is up to date.
+Compiling vhdl file "C:/Users/DPain/lab4/register_file.vhdl" in Library work.
+Architecture behave of Entity register_file is up to date.
+Compiling vhdl file "C:/Users/DPain/lab4/alu.vhdl" in Library work.
+Architecture structural of Entity alu is up to date.
+Compiling vhdl file "C:/Users/DPain/lab4/display.vhdl" in Library work.
+Architecture behave of Entity display is up to date.
+Compiling vhdl file "C:/Users/DPain/lab4/clock_buffer.vhdl" in Library work.
+Architecture behave of Entity clock_buffer is up to date.
+Compiling vhdl file "C:/Users/DPain/lab4/comparator.vhdl" in Library work.
+Architecture behave of Entity comparator is up to date.
+Compiling vhdl file "C:/Users/DPain/lab4/calculator.vhdl" in Library work.
+Entity <calculator> compiled.
+Entity <calculator> (Architecture <behave>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <calculator> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <register_file> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <alu> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <display> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <clock_buffer> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <comparator> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <full_adder> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <dff> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <dlatch> in library <work> (architecture <behave>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <calculator> in library <work> (Architecture <behave>).
+Entity <calculator> analyzed. Unit <calculator> generated.
+
+Analyzing Entity <register_file> in library <work> (Architecture <behave>).
+Entity <register_file> analyzed. Unit <register_file> generated.
+
+Analyzing Entity <alu> in library <work> (Architecture <structural>).
+Entity <alu> analyzed. Unit <alu> generated.
+
+Analyzing Entity <full_adder> in library <work> (Architecture <behave>).
+Entity <full_adder> analyzed. Unit <full_adder> generated.
+
+Analyzing Entity <display> in library <work> (Architecture <behave>).
+INFO:Xst:1749 - "C:/Users/DPain/lab4/display.vhdl" line 26: report: Report statement with non static report message
+Entity <display> analyzed. Unit <display> generated.
+
+Analyzing Entity <clock_buffer> in library <work> (Architecture <behave>).
+Entity <clock_buffer> analyzed. Unit <clock_buffer> generated.
+
+Analyzing Entity <dff> in library <work> (Architecture <behave>).
+Entity <dff> analyzed. Unit <dff> generated.
+
+Analyzing Entity <dlatch> in library <work> (Architecture <behave>).
+Entity <dlatch> analyzed. Unit <dlatch> generated.
+
+Analyzing Entity <comparator> in library <work> (Architecture <behave>).
+Entity <comparator> analyzed. Unit <comparator> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <register_file>.
+    Related source file is "C:/Users/DPain/lab4/register_file.vhdl".
+    Found 8-bit 4-to-1 multiplexer for signal <RS_data>.
+    Found 8-bit 4-to-1 multiplexer for signal <RT_data>.
+    Found 8-bit register for signal <R0>.
+    Found 8-bit register for signal <R1>.
+    Found 8-bit register for signal <R2>.
+    Found 8-bit register for signal <R3>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+	inferred  16 Multiplexer(s).
+Unit <register_file> synthesized.
+
+
+Synthesizing Unit <display>.
+    Related source file is "C:/Users/DPain/lab4/display.vhdl".
+    Found 8-bit register for signal <output>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <display> synthesized.
+
+
+Synthesizing Unit <comparator>.
+    Related source file is "C:/Users/DPain/lab4/comparator.vhdl".
+    Found 1-bit xor2 for signal <comp_check$xor0000>.
+    Found 1-bit xor2 for signal <comp_check$xor0001>.
+    Found 1-bit xor2 for signal <comp_check$xor0002>.
+    Found 1-bit xor2 for signal <comp_check$xor0003>.
+    Found 1-bit xor2 for signal <comp_check$xor0004>.
+    Found 1-bit xor2 for signal <comp_check$xor0005>.
+    Found 1-bit xor2 for signal <comp_check$xor0006>.
+    Found 1-bit xor2 for signal <comp_check$xor0007>.
+Unit <comparator> synthesized.
+
+
+Synthesizing Unit <full_adder>.
+    Related source file is "C:/Users/DPain/lab4/full_adder.vhdl".
+    Found 1-bit xor3 for signal <S>.
+    Summary:
+	inferred   1 Xor(s).
+Unit <full_adder> synthesized.
+
+
+Synthesizing Unit <dff>.
+    Related source file is "C:/Users/DPain/lab4/dff.vhdl".
+    Found 1-bit register for signal <Q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <dff> synthesized.
+
+
+Synthesizing Unit <dlatch>.
+    Related source file is "C:/Users/DPain/lab4/dlatch.vhdl".
+WARNING:Xst:737 - Found 1-bit latch for signal <Q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+Unit <dlatch> synthesized.
+
+
+Synthesizing Unit <alu>.
+    Related source file is "C:/Users/DPain/lab4/alu.vhdl".
+WARNING:Xst:646 - Signal <cint<7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 8-bit xor2 for signal <bint>.
+Unit <alu> synthesized.
+
+
+Synthesizing Unit <clock_buffer>.
+    Related source file is "C:/Users/DPain/lab4/clock_buffer.vhdl".
+Unit <clock_buffer> synthesized.
+
+
+Synthesizing Unit <calculator>.
+    Related source file is "C:/Users/DPain/lab4/calculator.vhdl".
+Unit <calculator> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 8
+ 1-bit register                                        : 3
+ 8-bit register                                        : 5
+# Latches                                              : 2
+ 1-bit latch                                           : 2
+# Multiplexers                                         : 2
+ 8-bit 4-to-1 multiplexer                              : 2
+# Xors                                                 : 24
+ 1-bit xor2                                            : 16
+ 1-bit xor3                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 43
+ Flip-Flops                                            : 43
+# Latches                                              : 2
+ 1-bit latch                                           : 2
+# Multiplexers                                         : 16
+ 1-bit 4-to-1 multiplexer                              : 16
+# Xors                                                 : 24
+ 1-bit xor2                                            : 16
+ 1-bit xor3                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <calculator> ...
+
+Optimizing unit <register_file> ...
+
+Optimizing unit <display> ...
+
+Optimizing unit <alu> ...
+
+Optimizing unit <clock_buffer> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block calculator, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 43
+ Flip-Flops                                            : 43
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : calculator.ngr
+Top Level Output File Name         : calculator
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 17
+
+Cell Usage :
+# BELS                             : 115
+#      GND                         : 1
+#      LUT2                        : 5
+#      LUT3                        : 35
+#      LUT3_D                      : 1
+#      LUT4                        : 43
+#      LUT4_L                      : 5
+#      MUXF5                       : 24
+#      VCC                         : 1
+# FlipFlops/Latches                : 45
+#      FDC                         : 3
+#      FDE                         : 40
+#      LD                          : 2
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 17
+#      IBUF                        : 9
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                       48  out of    960     5%  
+ Number of Slice Flip Flops:             45  out of   1920     2%  
+ Number of 4 input LUTs:                 89  out of   1920     4%  
+ Number of IOs:                          17
+ Number of bonded IOBs:                  17  out of     83    20%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------------+--------------------------------------+-------+
+Clock Signal                                | Clock buffer(FF name)                | Load  |
+--------------------------------------------+--------------------------------------+-------+
+buff_clk1(clock_buffer_component/clk_out1:O)| BUFG(*)(register_file_component/R3_7)| 40    |
+clk                                         | IBUF+BUFG                            | 5     |
+--------------------------------------------+--------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+--------------------------------------------------------------------+------------------------------------+-------+
+Control Signal                                                      | Buffer(FF name)                    | Load  |
+--------------------------------------------------------------------+------------------------------------+-------+
+N0(XST_GND:G)                                                       | NONE(clock_buffer_component/dff2/Q)| 1     |
+clock_buffer_component/dlatch0/Q(clock_buffer_component/dlatch0/Q:Q)| NONE(clock_buffer_component/dff0/Q)| 1     |
+clock_buffer_component/dlatch1/Q(clock_buffer_component/dlatch1/Q:Q)| NONE(clock_buffer_component/dff1/Q)| 1     |
+--------------------------------------------------------------------+------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 7.878ns (Maximum Frequency: 126.936MHz)
+   Minimum input arrival time before clock: 10.231ns
+   Maximum output required time after clock: 4.283ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'buff_clk1'
+  Clock period: 7.878ns (frequency: 126.936MHz)
+  Total number of paths / destination ports: 2448 / 40
+-------------------------------------------------------------------------
+Delay:               7.878ns (Levels of Logic = 7)
+  Source:            register_file_component/R0_4 (FF)
+  Destination:       register_file_component/R3_7 (FF)
+  Source Clock:      buff_clk1 rising
+  Destination Clock: buff_clk1 rising
+
+  Data Path: register_file_component/R0_4 to register_file_component/R3_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.526  register_file_component/R0_4 (register_file_component/R0_4)
+     LUT3:I1->O            1   0.704   0.000  register_file_component/mux12_2_f5_F (N83)
+     MUXF5:I0->O          10   0.321   0.886  register_file_component/mux12_2_f5 (RS_data<4>)
+     LUT4:I3->O            1   0.704   0.000  alu_component/fa_4/Cout1_SW0_G (N60)
+     MUXF5:I1->O           2   0.321   0.451  alu_component/fa_4/Cout1_SW0 (N39)
+     LUT4:I3->O            1   0.704   0.420  alu_component/fa_5/Cout1_SW0 (N47)
+     MUXF5:S->O            1   0.739   0.499  alu_component/fa_7/Mxor_S_xo<0>11_SW0 (N53)
+     LUT3:I1->O            4   0.704   0.000  WD<7> (WD<7>)
+     FDE:D                     0.308          register_file_component/R2_7
+    ----------------------------------------
+    Total                      7.878ns (5.096ns logic, 2.782ns route)
+                                       (64.7% logic, 35.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.718ns (frequency: 148.854MHz)
+  Total number of paths / destination ports: 8 / 4
+-------------------------------------------------------------------------
+Delay:               3.359ns (Levels of Logic = 2)
+  Source:            clock_buffer_component/dff0/Q (FF)
+  Destination:       clock_buffer_component/dlatch0/Q (LATCH)
+  Source Clock:      clk rising
+  Destination Clock: clk falling
+
+  Data Path: clock_buffer_component/dff0/Q to clock_buffer_component/dlatch0/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.526  clock_buffer_component/dff0/Q (clock_buffer_component/dff0/Q)
+     LUT4:I1->O            2   0.704   0.526  clock_buffer_component/D4160 (clock_buffer_component/D4)
+     LUT2:I1->O            1   0.704   0.000  clock_buffer_component/D31 (clock_buffer_component/D3)
+     LD:D                      0.308          clock_buffer_component/dlatch0/Q
+    ----------------------------------------
+    Total                      3.359ns (2.307ns logic, 1.052ns route)
+                                       (68.7% logic, 31.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'buff_clk1'
+  Total number of paths / destination ports: 2408 / 80
+-------------------------------------------------------------------------
+Offset:              9.222ns (Levels of Logic = 8)
+  Source:            I<2> (PAD)
+  Destination:       register_file_component/R3_7 (FF)
+  Destination Clock: buff_clk1 rising
+
+  Data Path: I<2> to register_file_component/R3_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            18   1.218   1.243  I_2_IBUF (I_2_IBUF)
+     LUT3:I0->O            1   0.704   0.000  register_file_component/mux12_2_f5_F (N83)
+     MUXF5:I0->O          10   0.321   0.886  register_file_component/mux12_2_f5 (RS_data<4>)
+     LUT4:I3->O            1   0.704   0.000  alu_component/fa_4/Cout1_SW0_G (N60)
+     MUXF5:I1->O           2   0.321   0.451  alu_component/fa_4/Cout1_SW0 (N39)
+     LUT4:I3->O            1   0.704   0.420  alu_component/fa_5/Cout1_SW0 (N47)
+     MUXF5:S->O            1   0.739   0.499  alu_component/fa_7/Mxor_S_xo<0>11_SW0 (N53)
+     LUT3:I1->O            4   0.704   0.000  WD<7> (WD<7>)
+     FDE:D                     0.308          register_file_component/R2_7
+    ----------------------------------------
+    Total                      9.222ns (5.723ns logic, 3.499ns route)
+                                       (62.1% logic, 37.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 97 / 2
+-------------------------------------------------------------------------
+Offset:              10.231ns (Levels of Logic = 8)
+  Source:            I<2> (PAD)
+  Destination:       clock_buffer_component/dlatch0/Q (LATCH)
+  Destination Clock: clk falling
+
+  Data Path: I<2> to clock_buffer_component/dlatch0/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            18   1.218   1.243  I_2_IBUF (I_2_IBUF)
+     LUT3:I0->O            1   0.704   0.000  register_file_component/mux12_2_f5_F (N83)
+     MUXF5:I0->O          10   0.321   0.917  register_file_component/mux12_2_f5 (RS_data<4>)
+     LUT4:I2->O            1   0.704   0.455  clock_buffer_component/D4133 (clock_buffer_component/D4133)
+     LUT4:I2->O            1   0.704   0.424  clock_buffer_component/D430_SW0_SW0 (N101)
+     LUT4:I3->O            1   0.704   0.595  clock_buffer_component/D430_SW0 (N45)
+     LUT4:I0->O            2   0.704   0.526  clock_buffer_component/D4160 (clock_buffer_component/D4)
+     LUT2:I1->O            1   0.704   0.000  clock_buffer_component/D31 (clock_buffer_component/D3)
+     LD:D                      0.308          clock_buffer_component/dlatch0/Q
+    ----------------------------------------
+    Total                     10.231ns (6.071ns logic, 4.160ns route)
+                                       (59.3% logic, 40.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'buff_clk1'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            display_component/output_7 (FF)
+  Destination:       Led<7> (PAD)
+  Source Clock:      buff_clk1 rising
+
+  Data Path: display_component/output_7 to Led<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.591   0.420  display_component/output_7 (display_component/output_7)
+     OBUF:I->O                 3.272          Led_7_OBUF (Led<7>)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 2.59 secs
+ 
+--> 
+
+Total memory usage is 237844 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

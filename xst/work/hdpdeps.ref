@@ -1,0 +1,46 @@
+V3 35
+FL C:/Users/DPain/lab4/alu.vhdl 2019/05/19.10:33:20 O.87xd
+EN work/alu 1558492713 FL C:/Users/DPain/lab4/alu.vhdl PB ieee/std_logic_1164 1325952872
+AR work/alu/structural 1558492714 \
+      FL C:/Users/DPain/lab4/alu.vhdl EN work/alu 1558492713 CP full_adder
+FL C:/Users/DPain/lab4/calculator.vhdl 2019/05/21.22:36:16 O.87xd
+EN work/calculator 1558492721 FL C:/Users/DPain/lab4/calculator.vhdl \
+      PB ieee/std_logic_1164 1325952872 PB ieee/NUMERIC_STD 1325952877
+AR work/calculator/behave 1558492722 \
+      FL C:/Users/DPain/lab4/calculator.vhdl EN work/calculator 1558492721 \
+      CP register_file CP alu CP display CP clock_buffer CP comparator
+FL C:/Users/DPain/lab4/clock_buffer.vhdl 2019/05/06.19:56:40 O.87xd
+EN work/clock_buffer 1558492717 FL C:/Users/DPain/lab4/clock_buffer.vhdl \
+      PB ieee/std_logic_1164 1325952872
+AR work/clock_buffer/behave 1558492718 \
+      FL C:/Users/DPain/lab4/clock_buffer.vhdl EN work/clock_buffer 1558492717 \
+      CP dff CP dlatch
+FL C:/Users/DPain/lab4/comparator.vhdl 2019/05/04.18:48:59 O.87xd
+EN work/comparator 1558492719 FL C:/Users/DPain/lab4/comparator.vhdl \
+      PB ieee/std_logic_1164 1325952872
+AR work/comparator/behave 1558492720 \
+      FL C:/Users/DPain/lab4/comparator.vhdl EN work/comparator 1558492719
+FL C:/Users/DPain/lab4/dff.vhdl 2019/05/05.14:36:04 O.87xd
+EN work/dff 1558492705 FL C:/Users/DPain/lab4/dff.vhdl PB ieee/std_logic_1164 1325952872
+AR work/dff/behave 1558492706 \
+      FL C:/Users/DPain/lab4/dff.vhdl EN work/dff 1558492705
+FL C:/Users/DPain/lab4/display.vhdl 2019/05/19.11:25:39 O.87xd
+EN work/display 1558492715 FL C:/Users/DPain/lab4/display.vhdl \
+      PB ieee/std_logic_1164 1325952872 PB ieee/NUMERIC_STD 1325952877
+AR work/display/behave 1558492716 \
+      FL C:/Users/DPain/lab4/display.vhdl EN work/display 1558492715
+FL C:/Users/DPain/lab4/dlatch.vhdl 2019/05/06.19:56:41 O.87xd
+EN work/dlatch 1558492707 FL C:/Users/DPain/lab4/dlatch.vhdl \
+      PB ieee/std_logic_1164 1325952872
+AR work/dlatch/behave 1558492708 \
+      FL C:/Users/DPain/lab4/dlatch.vhdl EN work/dlatch 1558492707
+FL C:/Users/DPain/lab4/full_adder.vhdl 2019/05/04.18:48:56 O.87xd
+EN work/full_adder 1558492709 FL C:/Users/DPain/lab4/full_adder.vhdl \
+      PB ieee/std_logic_1164 1325952872
+AR work/full_adder/behave 1558492710 \
+      FL C:/Users/DPain/lab4/full_adder.vhdl EN work/full_adder 1558492709
+FL C:/Users/DPain/lab4/register_file.vhdl 2019/05/06.20:16:41 O.87xd
+EN work/register_file 1558492711 FL C:/Users/DPain/lab4/register_file.vhdl \
+      PB ieee/std_logic_1164 1325952872
+AR work/register_file/behave 1558492712 \
+      FL C:/Users/DPain/lab4/register_file.vhdl EN work/register_file 1558492711
